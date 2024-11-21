@@ -4,7 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import { Reveal } from "./ui/Reveal";
 import { motion } from "framer-motion";
-import Link from "next/link";
+
 import { useState } from "react";
 import LoadingOverlay from "./ui/LoadingOverlay";
 

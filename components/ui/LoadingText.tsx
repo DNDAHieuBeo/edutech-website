@@ -9,14 +9,13 @@ interface LoadingTextProps {
 
 export default function LoadingText({ onLoadingComplete }: LoadingTextProps) {
   const [displayText, setDisplayText] = useState("");
-  const targetText = "Student Autonomy in the Digital 4.0 Era"; // Đặt targetText trong LoadingText
+  const targetText = "Student Autonomy in the Digital 4.0 Era";
 
   useEffect(() => {
-    let interval: NodeJS.Timeout;
     let currentIndex = 0;
     let currentText = "!@$%@!%@!*&@#@&!!@$%@!%@!*&@#@!&*@&^*@$";
 
-    interval = setInterval(() => {
+    const inter = setInterval(() => { // Đổi từ `let` thành `const`
       if (currentIndex < targetText.length) {
         currentText =
           currentText.substring(0, currentIndex) +
@@ -26,14 +25,14 @@ export default function LoadingText({ onLoadingComplete }: LoadingTextProps) {
         setDisplayText(currentText);
         currentIndex++;
       } else {
-        clearInterval(interval);
+        clearInterval(inter);
         setTimeout(() => {
           onLoadingComplete();
         }, 500); // Giữ một khoảng thời gian trước khi tắt loading
       }
     }, 50);
 
-    return () => clearInterval(interval);
+    return () => clearInterval(inter);
   }, [targetText, onLoadingComplete]);
 
   return (
