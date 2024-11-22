@@ -19,7 +19,7 @@ const TheProcrastinationSyndrome = () => {
         <div
           className="h-[500px] bg-cover w-full bg-no-repeat flex flex-col items-center justify-center text-white text-center"
           style={{
-            backgroundImage: "url('/TheProcrastinationSyndrome/img1.jpg')",
+            backgroundImage: "url('/TheProcrastinationSyndrome/2.jpeg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
@@ -65,7 +65,7 @@ const TheProcrastinationSyndrome = () => {
           <div className="w-full lg:w-1/2">
             <Reveal>
               <Image
-                src="/TheProcrastinationSyndrome/img2.jpg"
+                src="/TheProcrastinationSyndrome/4.jpg"
                 alt="Trì hoãn học tập"
                 className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                 width={600}
@@ -95,7 +95,7 @@ const TheProcrastinationSyndrome = () => {
           <div className="w-full lg:w-1/2">
             <Reveal>
               <Image
-                src="/TheProcrastinationSyndrome/img3.jpg"
+                src="/TheProcrastinationSyndrome/3.jpg"
                 alt="Căn bệnh trì hoãn"
                 className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                 width={600}
@@ -125,7 +125,7 @@ const TheProcrastinationSyndrome = () => {
           <div className="w-full lg:w-1/3">
             <Reveal>
               <Image
-                src="/TheProcrastinationSyndrome/img4.png"
+                src="/TheProcrastinationSyndrome/1.png"
                 alt="Trì hoãn học tập"
                 className="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
                 width={600}

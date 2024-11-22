@@ -57,7 +57,7 @@ export default function Topics() {
       <div className="text-center mb-10">
         <div className="text-xl font-bold bg-maincolor w-fit px-4 py-2 rounded-full mx-auto">
           <Reveal>
-            <h2>TOPIC</h2>
+            <h2 className="text-2xl font-bold text-black bg-maincolor w-fit px-4 py-2 rounded-full mx-auto">ĐỀ TÀI NGHIÊN CỨU</h2>
           </Reveal>
         </div>
         <div className="mt-4 text-white px-16 text-center max-w-3xl mx-auto">

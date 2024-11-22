@@ -45,7 +45,7 @@ export default function WorkingProcess() {
       <div className="text-center mb-8">
         <div className="text-xl font-bold bg-maincolor w-fit px-4 py-2 rounded-full mx-auto">
           <Reveal>
-            <h2>GIAI ĐOẠN NGHIÊN CỨU</h2>
+            <h2 className="text-2xl font-bold text-black bg-maincolor w-fit px-4 py-2 rounded-full mx-auto" >GIAI ĐOẠN NGHIÊN CỨU</h2>
           </Reveal>
         </div>
         <div className="mt-4 text-white px-16 text-center max-w-3xl mx-auto">
@@ -91,7 +91,7 @@ export default function WorkingProcess() {
                   transition={{ duration: 0.75 }}
                   className="overflow-hidden mt-4"
                 >
-                  <hr className="border-gray-300 my-4" />
+                  <hr className="border-black my-4" />
                   <p className="text-black">{step.description}</p>
                 </motion.div>
               )}

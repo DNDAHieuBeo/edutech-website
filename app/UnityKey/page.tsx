@@ -15,9 +15,9 @@ const UnityKey = () => {
 
       {/* Hero Section */}
       <section
-        className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-black px-4 sm:px-8 md:px-16 text-center bg-cover bg-center"
+        className="h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-black px-4 sm:px-8 md:px-16 text-center bg-fixed bg-cover bg-center"
         style={{
-          backgroundImage: "url('/UnityKey/1.jpg')",
+          backgroundImage: "url('/UnityKey/4.jpg')",
         }}
       >
         <motion.div
@@ -65,7 +65,7 @@ const UnityKey = () => {
             className="lg:w-1/2"
           >
             <Image
-              src="/UnityKey/2.jpg"
+              src="/UnityKey/1.jpg"
               alt="Đoàn kết"
               className="rounded-lg shadow-lg"
               width={500}
@@ -111,7 +111,8 @@ const UnityKey = () => {
             },
             {
               title: "Tôn trong mọi người",
-              description: "Tất cả thành viên phải tôn trọng ý kiến của các thành viên khác",
+              description:
+                "Tất cả thành viên phải tôn trọng ý kiến của các thành viên khác",
             },
           ].map((item, index) => (
             <motion.div
@@ -120,7 +121,7 @@ const UnityKey = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-slate-900 border border-gray-700 p-6 rounded-lg shadow-md"
+              className="bg-slate-900 border border-gray-700 p-6 rounded-lg shadow-md hover:border-white"
             >
               <h3 className="text-xl font-bold mb-2 text-white">
                 {item.title}
@@ -160,7 +161,20 @@ const UnityKey = () => {
           ))}
         </div>
       </section>
-
+      <div className="p-12">
+        <h3 className="text-xl sm:text-2xl font-semibold text-center mb-6">
+          Xem thêm về tầm quan trọng củ tinh thần đoàn kết qua video này
+        </h3>
+        <div className="flex justify-center">
+          <iframe
+            className="w-full max-w-2xl aspect-video rounded-lg shadow-lg"
+            src="https://www.youtube.com/embed/1sSing6ntVA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
       {/* Footer */}
       <Footer />
     </main>

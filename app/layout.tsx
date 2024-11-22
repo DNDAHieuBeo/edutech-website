@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+
+import { Roboto } from "next/font/google";
 import "./globals.css";
 
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"], 
-  weight: ["400", "500", "700"], 
-  variable: "--font-space-grotesk", 
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
 });
+
 
 export const metadata: Metadata = {
   title: "EduTech Wellness",
@@ -24,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} antialiased`}>
+      <body className={`${roboto.variable} antialiased`}>
         {children}
       </body>
     </html>
